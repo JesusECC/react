@@ -1,9 +1,9 @@
-import React, {Component0} from 'react';
+import React, {Component} from 'react';
 
 class Home extends Component{
   render(){
-    return this.Props.children
+    return this.props.children
   }
 }
 
-export default Home
+export default Home;
