@@ -4,6 +4,7 @@ import{
   Text,
   StyleSheet
 }from 'react-native';
+
 function suggestionListLayouts(props){
   return(
     <View style={styles.container}>
@@ -14,7 +15,7 @@ function suggestionListLayouts(props){
 }
 const styles=StyleSheet.create({
   container:{
-    paddingVertical:20,
+    paddingVertical:30,
     flex:1,
   },
   title:{
