@@ -19,21 +19,12 @@ class SuggestionList extends Component{
     )
   }
   render() {
-    const list=[
-      {
-        title:'avengers',
-        key:'1'
-      },
-      {
-        title: 'Pokemon',
-        key: '2'
-      }
-    ]
+
     return (
       <Layout
         title= "Recomendado para ti" >
         <FlatList
-          data={list}
+          data={this.props.list}
           ListEmptyComponent={this.renderEmtpy}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}

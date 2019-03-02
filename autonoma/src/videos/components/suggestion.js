@@ -20,7 +20,7 @@ function Suggestion(props){
         </View>
       </View>
       <View style={styles.right}>
-        <Text style={styles.title}>Avengers</Text>
+        <Text style={styles.title}>{props.title}</Text>
         <Text style={styles.years}>2007</Text>
         <Text style={styles.rating}>5</Text>
       </View>
