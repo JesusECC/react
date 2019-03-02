@@ -13,16 +13,18 @@ function Suggestion(props){
       <View style={styles.left}>
         <Image
           style={styles.cover}
-          source={require('../../../assets/autonoma.png')}
+          source={{
+            uri:props.medium_cover_image
+          }}
         />
         <View style={styles.genre}>
-          <Text style={styles.genreText}>Accion </Text>
+          <Text style={styles.genreText}>{props.genres[0]} </Text>
         </View>
       </View>
       <View style={styles.right}>
         <Text style={styles.title}>{props.title}</Text>
-        <Text style={styles.years}>2007</Text>
-        <Text style={styles.rating}>5</Text>
+        <Text style={styles.years}>{props.year}</Text>
+        <Text style={styles.rating}>{props.rating}</Text>
       </View>
     </View>
   )
